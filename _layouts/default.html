@@ -11,7 +11,9 @@
           <a href="{{ site.url }}/" id="logo" title="{{ site.name }}"
              style="background-image: url({{site.baseurl}}/public/images/logo.png);"></a>
         </div>
-        {% include navigation.html %}
+        <header class="clearfix">
+        <h1>{{ site.name }}</h1>
+        </header>
       </header>
 
       {{ content }}
@@ -23,6 +25,13 @@
     </div>
 
     <!-- scripts -->
+    <script src="{{ site.baseurl }}/public/js/imagesloaded.pkgd.min.js"></script>
+    <script src="{{ site.baseurl }}/public/js/masonry.pkgd.min.js"></script>
+    <script src="{{ site.baseurl }}/public/js/classie.js"></script>
+    <script src="{{ site.baseurl }}/public/js/cbpGridGallery.js"></script>
+    <script>
+      new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+    </script>
     <script src="http://ajax.useso.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="{{site.baseurl}}/public/js/jquery.fitvids.js"></script>
     <script>

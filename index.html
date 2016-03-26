@@ -3,9 +3,44 @@ layout: default
 title: 首页
 ---
 
-<article class="page">
-<div class="entry">
-    <p>欢迎来到GMT中文社区。</p>
-    <p>本社区正在开发建设中。如果你有兴趣，欢迎加入社区的初期建设中来。</p>
+<div class="container">
+    <div id="grid-gallery" class="grid-gallery">
+
+    <section class="grid-wrap">
+    <ul class="grid">
+        <li class="grid-sizer"></li><!-- for Masonry column width -->
+        {% for post in site.posts %}
+        <li>
+            <figure>
+                <img src="{{ post.id }}/{{ post.figure }}" alt="img"/>
+                <figcaption>
+                    <h3>{{ post.title}}</h3>
+                    <p>{{ post.description }}</p>
+                </figcaption>
+            </figure>
+        </li>
+        {% endfor %}
+    </ul>
+    </section><!-- // grid-wrap -->
+
+    <section class="slideshow">
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <figure>
+                <img src="{{ site.url }}/img/large/{{ post.photo }}" alt="img"/>
+                <figcaption><h3>{{ post.caption_header}}</h3><p>{{ post.caption }}</p></figcaption>
+            </figure>
+        </li>
+        {% endfor %}
+    </ul>
+    <nav>
+        <span class="icon nav-prev"></span>
+        <span class="icon nav-next"></span>
+        <span class="icon nav-close"></span>
+    </nav>
+    <div class="info-keys icon">Navigate with arrow keys</div>
+    </section><!-- // slideshow -->
+
+    </div><!-- // grid-gallery -->
 </div>
-</article>
