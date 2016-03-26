@@ -28,8 +28,11 @@ title: 首页
         {% for post in site.posts %}
         <li>
             <figure>
-                <img src="{{ site.url }}/img/large/{{ post.photo }}" alt="img"/>
-                <figcaption><h3>{{ post.caption_header}}</h3><p>{{ post.caption }}</p></figcaption>
+                <img src="{{ post.id }}/{{ post.figure }}" alt="img"/>
+                <figcaption>
+                    <h3>{{ post.title}}</h3>
+                    <p>{{ post.description }}</p>
+                </figcaption>
             </figure>
         </li>
         {% endfor %}
