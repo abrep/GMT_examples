@@ -10,3 +10,7 @@ baseurl:
 sass:
   sass_dir: public/css
   style: :compressed
+
+exclude:
+  - README.md
+  - update_examples.py
