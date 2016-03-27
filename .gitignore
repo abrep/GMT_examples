@@ -7,3 +7,5 @@ img/Thumbs.db
 node_modules
 .sass-cache
 .ruby-version
+ex*/*.ps
+anim*/*.ps

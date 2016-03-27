@@ -14,3 +14,5 @@ sass:
 exclude:
   - README.md
   - update_examples.py
+  - ex*/*.ps
+  - anim*/*.ps

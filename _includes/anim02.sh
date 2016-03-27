@@ -33,10 +33,6 @@ while [ ${frame} -lt ${n_frames} ]; do
 	gmt psxy -Rus.nc -J -O -K -Sc0.8i -Gwhite -Wthin >> $$.ps <<< "256.25 35.6"
 	gmt psxy -Rus.nc -J -O -Sv0.1i+e -Gred -Wthick >> $$.ps <<< "256.25 35.6 ${dir} 0.37"
 	[[ ${frame} -eq 0 ]] && cp $$.ps ${ps}
-	if [ $# -eq 0 ]; then
-		gmt_cleanup .gmt
-		gmt_abort "${0}: First frame plotted to ${name}.ps"
-	fi
 #	RIP to TIFF at specified dpi
 	gmt psconvert -E${dpi} -Tt $$.ps
 	mv -f $$.tif $$/${file}.tif
@@ -48,3 +44,4 @@ convert -delay 10 -loop 0 $$/${name_}*.tif ${name}.gif
 
 # 4. Clean up temporary files
 gmt_cleanup .gmt
+rm gmt.*

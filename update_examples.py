@@ -1,31 +1,62 @@
 #!/usr/bin/env python
 # -*- coding: utf8 -*-
+#
+# Update all examples
+#
 
-import os
-import glob
+from os import chdir, system, unlink
+from os.path import getmtime, exists
+from glob import glob
+from shutil import copyfile
 
-flag = 0
-for dir in glob.glob("ex*"):
+# exnnn
+for dir in glob("ex*"):
     print(dir)
-    os.chdir(dir)
-    script = dir + ".sh"
-    ps = dir + ".ps"
+    chdir(dir)
+
+    # bash script
+    script = glob(dir + ".sh")[0]
+    cmd = "bash " + script
+    # perl script
+    if not script:
+        script = glob(dir + ".pl")[0]
+        cmd = "perl " + script
+    # python script
+    if not script:
+        script = glob(dir + ".py")[0]
+        cmd = "python " + script
+
+    # PNG
     png = dir + ".png"
-    pdf = dir + ".pdf"
-    if not (os.path.exists(png) and os.path.exists(pdf)):
-        flag = 1
-    else:
-        script_time = os.path.getmtime(script)
-        png_time = os.path.getmtime(png)
-        pdf_time = os.path.getmtime(pdf)
-        if (script_time>png_time or script_time>pdf_time):
-            flag = 1
+    if (not exists(png) or getmtime(script) > getmtime(png)):
+        system(cmd)
+        ps = dir + ".ps"
+        system("gmt psconvert -A -P -E50 -Tg -Fthumbnail." + dir + ".png " + ps)
+        system("gmt psconvert -A -P -Tg " + ps)
+        copyfile(script, "../_includes/" + script)
+    chdir("..")
 
-    if flag == 1:
-        os.system("bash " + script)
-        os.system("gmt psconvert -A -P -Tg " + ps)
-        os.system("gmt psconvert -A -P -Tf " + ps)
-        for file in glob.glob("*.ps"):
-            os.unlink(file)
+# animxx
+for dir in glob("anim*"):
+    print(dir)
+    chdir(dir)
 
-    os.chdir("..")
+    # bash script
+    script = glob(dir + ".sh")[0]
+    cmd = "bash " + script + " 1 "
+    # perl script
+    if not script:
+        script = glob(dir + ".pl")[0]
+        cmd = "perl " + script
+    # python script
+    if not script:
+        script = glob(dir + ".py")[0]
+        cmd = "python " + script
+
+    # PNG
+    gif = dir + ".gif"
+    if (not exists(gif) or getmtime(script) > getmtime(gif)):
+        system(cmd)
+        copyfile(gif, "thumbnail." + gif)
+        copyfile(script, "../_includes/" + script)
+    chdir("..")

@@ -45,5 +45,5 @@ while [ ${az} -lt 360 ]; do
 	frame=`gmt_set_framenext ${frame}`
 done
 convert -delay 10 -loop 0 +dither $$/${name_}*.tif ${name}.gif
-# 4. Clean up temporary files
 gmt_cleanup .gmt
+rm gmt.*

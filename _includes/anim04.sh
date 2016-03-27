@@ -41,10 +41,6 @@ function make_frame () {
 		${REGION} -O -K -W1p $$.path.d >> ${file}_$$.ps
 	gmt pstext -R0/${px}/0/${py} -Jx1i -F+f14p,Helvetica-Bold+jTL -O >> ${file}_$$.ps <<< "0 4.6 ${ID}"
 	[[ ${frame} -eq 0 ]] && cp ${file}_$$.ps ${ps}
-	if [ $# -eq 0 ]; then
-		gmt_cleanup .gmt
-		gmt_abort "${0}: First frame plotted to ${name}.ps"
-	fi
 	gmt psconvert ${file}_$$.ps -Tt -E${dpi}
 	mv ${file}_$$.tif $$/${file}.tif
 	rm -f ${file}_$$.ps
