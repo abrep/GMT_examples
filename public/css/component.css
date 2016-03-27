@@ -146,10 +146,10 @@
 }
 
 .slideshow figure {
-	width: 100%;
-	height: 100%;
+	width: 85%;
+	height: auto;
 	background: #fff;
-	border: 50px solid #fff;
+	border: 25px solid #fff;
 	overflow: hidden;
 }
 
