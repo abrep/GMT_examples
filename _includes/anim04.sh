@@ -81,3 +81,4 @@ fi
 
 # 4. Clean up temporary files
 gmt_cleanup .gmt
+rm gmt.*
