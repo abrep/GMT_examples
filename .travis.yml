@@ -5,7 +5,7 @@ rvm:
 script: ./script/cibuild
 
 branches:
-  exclude:
+  only:
     - gh-pages
 
 env:
