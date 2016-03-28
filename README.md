@@ -1,6 +1,6 @@
 ### GMT示例集
 
-[![Build Status](https://travis-ci.org/gmt-china/GMT_examples.svg?branch=master)](https://travis-ci.org/gmt-china/GMT_examples)
+[![Build Status](https://travis-ci.org/gmt-china/GMT_examples.svg?branch=gh-pages)](https://travis-ci.org/gmt-china/GMT_examples)
 
 该网站由Jekyll生成，使用了brume作为主题，项目托管在GitHub上。
 
