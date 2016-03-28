@@ -23,5 +23,4 @@ data: [osu91a1f_16.nc, file.cpt]
 {% endhighlight %}
 
 这里可以加文本，下面的不要修改
-
-![]({{ page.id }}/{{ page.figure }})
+![{{page.title}}]({{ page.id }}/{{ page.figure }})
