@@ -1,6 +1,4 @@
 #!/bin/bash
-#		GMT EXAMPLE 28
-#		$Id$
 #
 # Purpose:	Illustrates how to mix UTM data and UTM gmt projection
 # GMT progs:	makecpt, grdgradient, grdimage, grdinfo, grdmath, pscoast, pstext, mapproject

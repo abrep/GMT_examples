@@ -1,6 +1,4 @@
 #!/bin/bash
-#		GMT EXAMPLE 05
-#		$Id$
 #
 # Purpose:	Generate grid and show monochrome 3-D perspective
 # GMT progs:	grdgradient, grdmath, grdview, pstext

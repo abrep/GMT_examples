@@ -1,6 +1,4 @@
 #!/bin/bash
-#		GMT EXAMPLE 23
-#		$Id$
 #
 # Purpose:	Plot distances from Rome and draw shortest paths
 # GMT progs:	grdmath, grdcontour, pscoast, psxy, pstext, grdtrack

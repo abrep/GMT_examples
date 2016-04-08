@@ -1,6 +1,4 @@
 #!/bin/bash
-#		$Id$
-#		GMT EXAMPLE 26
 #
 # Purpose:	Demonstrate general vertical perspective projection
 # GMT progs:	pscoast

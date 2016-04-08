@@ -1,6 +1,4 @@
 #!/bin/bash
-#               GMT EXAMPLE 45
-#               $Id$
 #
 # Purpose:      Illustrate use of trend1d mixed models
 # GMT progs:    pstext, psxy, trend1d

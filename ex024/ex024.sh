@@ -1,6 +1,4 @@
 #!/bin/bash
-#		GMT EXAMPLE 24
-#		$Id$
 #
 # Purpose:	Extract subsets of data based on geospatial criteria
 # GMT progs:	gmtselect, pscoast, psxy, gmtinfo

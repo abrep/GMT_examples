@@ -1,6 +1,4 @@
 #!/bin/bash
-#		GMT EXAMPLE 30
-#		$Id$
 #
 # Purpose:	Show graph mode and math angles
 # GMT progs:	gmtmath, psbasemap, pstext and psxy

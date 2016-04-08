@@ -1,6 +1,4 @@
 #!/bin/bash
-#               GMT EXAMPLE 42
-#               $Id$
 #
 # Purpose:      Illustrate Antarctica and stereographic projection
 # GMT progs:    makecpt, grdimage, pscoast, pslegend, psscale, pstext, psxy

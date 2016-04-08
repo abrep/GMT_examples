@@ -1,6 +1,4 @@
 #!/bin/bash
-#		GMT EXAMPLE 03
-#		$Id$
 #
 # Purpose:	Resample track data, do spectral analysis, and plot
 # GMT progs:	filter1d, fitcircle, gmtinfo, project, sample1d
