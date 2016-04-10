@@ -1,6 +1,4 @@
 #!/bin/bash
-#		GMT EXAMPLE 08
-#		$Id$
 #
 # Purpose:	Make a 3-D bar plot
 # GMT progs:	grd2xyz, pstext, psxyz

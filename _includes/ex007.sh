@@ -1,6 +1,4 @@
 #!/bin/bash
-#		GMT EXAMPLE 07
-#		$Id$
 #
 # Purpose:	Make a basemap with earthquakes and isochrons etc
 # GMT progs:	pscoast, pstext, psxy

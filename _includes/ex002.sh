@@ -1,10 +1,8 @@
 #!/bin/bash
-#		GMT EXAMPLE 02
-#		$Id$
+#    根据网格数据绘制彩图
 #
-# Purpose:	Make two color images based gridded data
-# GMT progs:	gmtset, grd2cpt, grdgradient, grdimage, makecpt, psscale, pstext
-# Unix progs:	rm
+# GMT模块 :	gmtset, grd2cpt, grdgradient, grdimage, makecpt, psscale, pstext
+# Unix命令:	rm
 #
 ps=ex002.ps
 gmt gmtset FONT_TITLE 30p MAP_ANNOT_OBLIQUE 0

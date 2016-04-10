@@ -1,6 +1,4 @@
 #!/bin/bash
-#               GMT EXAMPLE 34
-#               $Id$
 #
 # Purpose:      Illustrate pscoast with DCW country polygons
 # GMT progs:    pscoast, makecpt, grdimage, grdgradient

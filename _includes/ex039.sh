@@ -1,6 +1,4 @@
 #!/bin/bash
-#               GMT EXAMPLE 39
-#               $Id$
 #
 # Purpose:      Illustrate evaluation of spherical harmonic coefficients
 # GMT progs:    psscale, pstext, makecpt, grdimage, grdgradient, sph2grd

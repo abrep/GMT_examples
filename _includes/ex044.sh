@@ -1,6 +1,4 @@
 #!/bin/bash
-#               GMT EXAMPLE 44
-#               $Id$
 #
 # Purpose:      Illustrate use of map inserts
 # GMT progs:    pscoast, psbasemap, mapproject

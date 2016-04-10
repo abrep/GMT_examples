@@ -1,6 +1,4 @@
 #!/bin/bash
-#		GMT EXAMPLE 18
-#		$Id$
 #
 # Purpose:	Illustrates volumes of grids inside contours and spatial
 #		selection of data

@@ -1,6 +1,4 @@
 #!/bin/bash
-#               GMT EXAMPLE 41
-#               $Id$
 #
 # Purpose:      Illustrate typesetting of legend with table
 # GMT progs:    pscoast, pslegend, psxy

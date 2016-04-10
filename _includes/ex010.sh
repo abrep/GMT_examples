@@ -1,6 +1,4 @@
 #!/bin/bash
-#		GMT EXAMPLE 10
-#		$Id$
 #
 # Purpose:	Make 3-D bar graph on top of perspective map
 # GMT progs:	pscoast, pstext, psxyz, pslegend

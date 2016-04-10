@@ -1,6 +1,4 @@
 #!/bin/bash
-#		GMT EXAMPLE 14
-#		$Id$
 #
 # Purpose:	Showing simple gridding, contouring, and resampling along tracks
 # GMT progs:	blockmean, grdcontour, grdtrack, grdtrend, gmtinfo, project

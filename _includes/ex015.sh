@@ -1,6 +1,4 @@
 #!/bin/bash
-#		GMT EXAMPLE 15
-#		$Id$
 #
 # Purpose:	Gridding and clipping when data are missing
 # GMT progs:	blockmedian, gmtconvert, grdclip, grdcontour, grdinfo, gmtinfo

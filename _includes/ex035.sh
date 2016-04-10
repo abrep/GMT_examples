@@ -1,6 +1,4 @@
 #!/bin/bash
-#               GMT EXAMPLE 35
-#               $Id$
 #
 # Purpose:      Illustrate sphtriangulate and sphdistance with GSHHG crude data
 # GMT progs:    pscoast, psxy, makecpt, grdimage, grdcontour, sphtriangulate, sphdistance
