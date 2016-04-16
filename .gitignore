@@ -9,3 +9,4 @@ node_modules
 .ruby-version
 ex*/*.ps
 anim*/*.ps
+Gemfile.lock
